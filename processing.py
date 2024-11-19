@@ -4,6 +4,7 @@ import fitz  # PyMuPDF
 
 def extract_text_and_images(pdf_file):
     """Main function to extract text and images from a PDF."""
+    
     # Create directories for output
     new_dir = Path("Documents") / Path(pdf_file).stem
     new_dir.mkdir(parents=True, exist_ok=True)
