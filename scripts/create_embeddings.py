@@ -2,16 +2,18 @@ import json
 from pathlib import Path
 from sentence_transformers import SentenceTransformer
 
-def create_embeddings(input_dir, output_file="prepared_data.json", batch_size=16):
+def create_embeddings(input_dir, output_file, model_path, batch_size=16):
     """
-    Create embeddings from text files in the input directory.
+    Create embeddings from text files in the input directory using a specified model.
 
     Args:
         input_dir (str): Directory containing lecture subdirectories with `text.txt` files.
         output_file (str): Path to save the JSON file with embeddings.
+        model_path (str): Path to the embedding model (pretrained or fine-tuned).
         batch_size (int): Number of chunks to embed in a single batch.
     """
-    model = SentenceTransformer('multi-qa-mpnet-base-dot-v1')
+    # Load the specified model
+    model = SentenceTransformer(model_path)
     input_path = Path(input_dir)
     all_data = []
 
@@ -55,4 +57,16 @@ def create_embeddings(input_dir, output_file="prepared_data.json", batch_size=16
     print(f"Embeddings and metadata saved to {output_file}")
 
 if __name__ == "__main__":
-    create_embeddings("Documents")
+    # Create embeddings for the pretrained model
+    create_embeddings(
+        input_dir="Documents",
+        output_file="prepared_data_pretrained.json",
+        model_path="multi-qa-mpnet-base-dot-v1"
+    )
+    
+    # Create embeddings for the fine-tuned model
+    create_embeddings(
+        input_dir="Documents",
+        output_file="prepared_data_finetuned.json",
+        model_path="fine_tuned_model"
+    )
