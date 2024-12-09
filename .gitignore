@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *.pyo
 
+
+#Model
+fine_tuned_model/
+
 # Ignore virtual environment directory
 .venv/
 env/
@@ -20,7 +24,10 @@ Thumbs.db
 
 # Ignore extracted or processed data
 Documents/
+lectures/
 RawPDFs/
+*.json
+*.bin
 
 # Ignore IDE-specific files
 .idea/
