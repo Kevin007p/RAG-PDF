@@ -20,7 +20,7 @@ def extract_text_from_pdfs(input_dir, output_dir, chunk_size=5):
         lecture_output_dir.mkdir(parents=True, exist_ok=True)
         text_file_path = lecture_output_dir / "text.txt"
 
-        with open(text_file_path, "w") as output_file:
+        with open(text_file_path, "w", encoding="utf-8") as output_file:
             chunk_lines = []  # Temporary storage for lines in a chunk
             for page_num in range(len(document)):
                 page = document[page_num]

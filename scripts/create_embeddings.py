@@ -24,7 +24,7 @@ def create_embeddings(input_dir, output_file, model_path, batch_size=16):
                 print(f"Warning: Missing text.txt in {lecture_dir}")
                 continue
             
-            with open(text_file, "r") as file:
+            with open(text_file, "r", encoding="utf-8") as file:
                 text = file.read()
 
             # Split text into chunks
@@ -51,7 +51,7 @@ def create_embeddings(input_dir, output_file, model_path, batch_size=16):
                     })
     
     # Save the prepared data to a JSON file
-    with open(output_file, "w") as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         json.dump(all_data, f)
 
     print(f"Embeddings and metadata saved to {output_file}")
