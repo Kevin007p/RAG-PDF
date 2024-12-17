@@ -24,4 +24,5 @@ pip install --no-index -r requirements.txt
 pip install -r requirements.txt
 
 # Run your Python script
-python3 summarize_data.py
+# python3 summarize_data.py
+python3 scripts/creating_database.py
