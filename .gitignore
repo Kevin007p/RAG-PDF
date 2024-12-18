@@ -26,7 +26,6 @@ Thumbs.db
 Documents/
 lectures/
 RawPDFs/
-*.json
 *.bin
 
 # Ignore IDE-specific files

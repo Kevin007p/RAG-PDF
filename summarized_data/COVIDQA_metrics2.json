@@ -1,0 +1,90 @@
+{
+    "raw_data": {
+        "k=1": {
+            "Precision@k": 0.5691056910569106,
+            "Recall@k": 0.5691056910569106,
+            "Avg Retrieval Time (s)": 7.770798070643976e-05
+        },
+        "k=3": {
+            "Precision@k": 0.25474254742547425,
+            "Recall@k": 0.7642276422764228,
+            "Avg Retrieval Time (s)": 7.869848390904868e-05
+        },
+        "k=7": {
+            "Precision@k": 0.12775842044134722,
+            "Recall@k": 0.8943089430894309,
+            "Avg Retrieval Time (s)": 7.981207312607184e-05
+        },
+        "k=15": {
+            "Precision@k": 0.06260162601626015,
+            "Recall@k": 0.9390243902439024,
+            "Avg Retrieval Time (s)": 8.298226488314993e-05
+        }
+    },
+    "abstractive_summary": {
+        "k=1": {
+            "Precision@k": 0.3008130081300813,
+            "Recall@k": 0.07520325203252033,
+            "Avg Retrieval Time (s)": 0.0002888596154809967
+        },
+        "k=3": {
+            "Precision@k": 0.2791327913279133,
+            "Recall@k": 0.20934959349593496,
+            "Avg Retrieval Time (s)": 0.00028801061273590336
+        },
+        "k=7": {
+            "Precision@k": 0.20905923344947727,
+            "Recall@k": 0.36585365853658536,
+            "Avg Retrieval Time (s)": 0.00029046361039324504
+        },
+        "k=15": {
+            "Precision@k": 0.1368563685636856,
+            "Recall@k": 0.5132113821138211,
+            "Avg Retrieval Time (s)": 0.0002935291305790103
+        }
+    },
+    "extractive_summary": {
+        "k=1": {
+            "Precision@k": 0.3699186991869919,
+            "Recall@k": 0.09247967479674797,
+            "Avg Retrieval Time (s)": 0.00028972509430675973
+        },
+        "k=3": {
+            "Precision@k": 0.30352303523035234,
+            "Recall@k": 0.22764227642276422,
+            "Avg Retrieval Time (s)": 0.0002895632410437111
+        },
+        "k=7": {
+            "Precision@k": 0.21718931475029032,
+            "Recall@k": 0.3800813008130081,
+            "Avg Retrieval Time (s)": 0.00029093366328293715
+        },
+        "k=15": {
+            "Precision@k": 0.14607046070460702,
+            "Recall@k": 0.5477642276422764,
+            "Avg Retrieval Time (s)": 0.00029457390792970734
+        }
+    },
+    "filtered_summary": {
+        "k=1": {
+            "Precision@k": 0.36585365853658536,
+            "Recall@k": 0.09146341463414634,
+            "Avg Retrieval Time (s)": 0.0002878623280098768
+        },
+        "k=3": {
+            "Precision@k": 0.3306233062330623,
+            "Recall@k": 0.24796747967479674,
+            "Avg Retrieval Time (s)": 0.0002848685272340852
+        },
+        "k=7": {
+            "Precision@k": 0.25319396051103366,
+            "Recall@k": 0.44308943089430897,
+            "Avg Retrieval Time (s)": 0.00028963689881611644
+        },
+        "k=15": {
+            "Precision@k": 0.16829268292682925,
+            "Recall@k": 0.6310975609756098,
+            "Avg Retrieval Time (s)": 0.0002930484166959437
+        }
+    }
+}
